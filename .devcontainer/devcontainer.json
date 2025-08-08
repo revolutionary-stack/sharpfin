@@ -1,0 +1,10 @@
+{
+  "name": "Sharpfin Dev Container",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "features": {
+    "ghcr.io/devcontainers/features/apt-get:1": {
+      "packages": "build-essential, make, git, libtool, autoconf"
+    }
+  },
+  "postCreateCommand": "sudo apt-get update && sudo apt-get install -y gcc-arm-linux-gnueabi g++-arm-linux-gnueabi"
+}
